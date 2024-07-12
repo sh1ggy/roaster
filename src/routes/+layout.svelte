@@ -1,5 +1,8 @@
 <script lang="ts">
 	import '../app.postcss';
-</script>
+	import { initializeStores, Toast } from '@skeletonlabs/skeleton';
 
+	initializeStores();
+</script>
+<Toast />
 <slot />
