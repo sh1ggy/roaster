@@ -15,10 +15,7 @@ export const actions = {
 		const prompt = formData.get('prompt');
     const isEmojiToText = formData.get('isEmojiToText')
     
-    console.log(formData);
-    debugger;
 		if (!prompt || !isEmojiToText) return;
-    
 
 		const openai = new OpenAI({
 			apiKey: OPENAI_KEY
@@ -36,8 +33,6 @@ export const actions = {
 			],
 			model: 'gpt-3.5-turbo'
 		});
-
-		console.log(completion.choices);
 
 		return {
 			msg: completion.choices[completion.choices.length - 1].message.content
