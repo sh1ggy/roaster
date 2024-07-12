@@ -6,7 +6,7 @@ export type RoasterResponse = {
 };
 
 const EMOJI_TO_TEXT_PROMPT = "You will be provided with emoji, and your task is to translate it into readable text sentences. Do not use any emoji in any circumstances. Come up with a result sentence to the best of your ability."
-const TEXT_TO_EMOJI_PROMPT = "You will be provided with text, and your task is to translate it into emojis. Do not use any regular text. Do your best with emojis only."
+const TEXT_TO_EMOJI_PROMPT = "You will be provided with text, and your task is to translate it into emojis. Do not use any regular text in any circumstances. Do your best with emojis only."
 
 export const actions = {
 	default: async ({ request }) => {
